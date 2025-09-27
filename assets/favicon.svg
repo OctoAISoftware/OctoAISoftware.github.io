@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="octoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Círculo principal -->
+  <circle cx="16" cy="16" r="14" fill="url(#octoGradient)" stroke="#1a0033" stroke-width="2"/>
+
+  <!-- Tentáculos estilizados como raios -->
+  <g stroke="white" stroke-width="2" stroke-linecap="round">
+    <line x1="16" y1="6" x2="16" y2="10"/>
+    <line x1="22" y1="8" x2="20" y2="12"/>
+    <line x1="26" y1="16" x2="22" y2="16"/>
+    <line x1="22" y1="24" x2="20" y2="20"/>
+    <line x1="16" y1="26" x2="16" y2="22"/>
+    <line x1="10" y1="24" x2="12" y2="20"/>
+    <line x1="6" y1="16" x2="10" y2="16"/>
+    <line x1="10" y1="8" x2="12" y2="12"/>
+  </g>
+
+  <!-- Centro brilhante -->
+  <circle cx="16" cy="16" r="4" fill="white" opacity="0.3"/>
+  <circle cx="16" cy="16" r="2" fill="white" opacity="0.6"/>
+</svg>

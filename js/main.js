@@ -482,23 +482,49 @@ function initGSAPAnimations() {
         const originalText = heroTitle.innerHTML;
         heroTitle.innerHTML = '';
 
-        // Split text into characters for typewriter effect
-        const chars = originalText.split('');
-        chars.forEach((char, index) => {
-            const span = document.createElement('span');
-            span.textContent = char;
-            span.style.opacity = '0';
-            span.style.display = 'inline-block';
-            span.style.transform = 'translateY(20px)';
-            heroTitle.appendChild(span);
+        // Split text by words instead of characters to preserve spaces
+        const words = originalText.split(/(\s+)/);
+        let charIndex = 0;
 
-            gsap.to(span, {
-                opacity: 1,
-                y: 0,
-                duration: 0.1,
-                delay: index * 0.05,
-                ease: "power2.out"
-            });
+        words.forEach((word, wordIndex) => {
+            if (word.trim() === '') {
+                // Handle spaces
+                const spaceSpan = document.createElement('span');
+                spaceSpan.textContent = word;
+                spaceSpan.style.opacity = '0';
+                spaceSpan.style.display = 'inline';
+                spaceSpan.style.transform = 'translateY(20px)';
+                heroTitle.appendChild(spaceSpan);
+
+                gsap.to(spaceSpan, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.05,
+                    delay: charIndex * 0.05,
+                    ease: "power2.out"
+                });
+                charIndex += word.length;
+            } else {
+                // Handle words
+                const wordChars = word.split('');
+                wordChars.forEach((char, charInWordIndex) => {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    span.style.opacity = '0';
+                    span.style.display = 'inline-block';
+                    span.style.transform = 'translateY(20px)';
+                    heroTitle.appendChild(span);
+
+                    gsap.to(span, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.08,
+                        delay: charIndex * 0.05,
+                        ease: "power2.out"
+                    });
+                    charIndex++;
+                });
+            }
         });
     }
 

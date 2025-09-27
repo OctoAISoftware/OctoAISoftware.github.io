@@ -240,15 +240,21 @@ body {
     height: 100%;
     background: radial-gradient(ellipse at center, rgba(26, 0, 51, 0.8) 0%, rgba(45, 27, 105, 0.6) 50%, transparent 70%);
     z-index: 2;
-    animation: gradientShift 8s ease-in-out infinite alternate;
+    animation: gradientShift 12s ease-in-out infinite alternate;
 }
 
 @keyframes gradientShift {
     0% {
         background: radial-gradient(ellipse at center, rgba(26, 0, 51, 0.8) 0%, rgba(45, 27, 105, 0.6) 50%, transparent 70%);
     }
+    25% {
+        background: radial-gradient(ellipse at 20% 60%, rgba(139, 92, 246, 0.7) 0%, rgba(0, 212, 255, 0.5) 50%, transparent 75%);
+    }
     50% {
         background: radial-gradient(ellipse at 30% 70%, rgba(139, 92, 246, 0.6) 0%, rgba(0, 212, 255, 0.4) 50%, transparent 80%);
+    }
+    75% {
+        background: radial-gradient(ellipse at 60% 40%, rgba(124, 58, 237, 0.6) 0%, rgba(139, 92, 246, 0.5) 50%, transparent 78%);
     }
     100% {
         background: radial-gradient(ellipse at 70% 30%, rgba(124, 58, 237, 0.7) 0%, rgba(139, 92, 246, 0.5) 50%, transparent 75%);

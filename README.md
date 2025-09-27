@@ -25,6 +25,7 @@ Site oficial da OCTO AI, uma landing page moderna e futurista que apresenta noss
 ```
 siteOCTO/
 ├── index.html          # Página principal
+├── 404.html           # Página de erro 404
 ├── termos.html         # Página de termos de uso
 ├── privacidade.html    # Página de política de privacidade
 ├── css/
@@ -59,13 +60,42 @@ siteOCTO/
 - **Fallback Seguro**: Se houver erro na detecção do timezone, usa o ano local
 - **Monitoramento**: Verifica e atualiza periodicamente para garantir precisão
 
+## 🚨 Página de Erro 404
+
+### Funcionalidades
+- **Design Futurista**: Tela de erro 404 com estilo premium consistente
+- **Animações Avançadas**: Número 404 com gradiente animado e efeito glow
+- **Navegação Intuitiva**: Botões para voltar ao início e contato
+- **Responsiva**: Funciona perfeitamente em todos os dispositivos
+- **SEO Otimizada**: Título e meta tags apropriados para mecanismos de busca
+
+### Elementos Visuais
+- **Número 404 Animado**: Gradiente roxo/azul com efeito de brilho pulsante
+- **Fundo Radial**: Gradiente sutil para profundidade visual
+- **Botões de Ação**: CTAs claros para navegação
+- **Contato Integrado**: Email de suporte diretamente na página
+
+### Estrutura da Página
+```html
+<section class="error-404-section">
+    <h1 class="error-title">
+        <span class="error-number">404</span>
+    </h1>
+    <h2 class="error-subtitle">Página não encontrada</h2>
+    <p class="error-description">A página que você está procurando não existe ou foi movida.</p>
+    <div class="error-actions">
+        <!-- Botões de ação -->
+    </div>
+</section>
+```
+
 ## 📄 Página de Termos de Uso
 
 ### Funcionalidades
 - **Página Completa**: `termos.html` com layout responsivo e navegação
 - **Datas Dinâmicas**: Data de vigência e última atualização inseridas automaticamente
 - **Timezone São Paulo**: Todas as datas baseadas no horário de São Paulo, Brasil
-- **Navegação Integrada**: Links no rodapé de ambas as páginas
+- **Navegação Integrada**: Links no rodapé de todas as páginas
 - **Design Consistente**: Mantém a identidade visual da marca OCTO AI
 
 ### Seções Incluídas
@@ -200,6 +230,7 @@ O site também está pronto para deploy em:
 
 ### Arquivos para Deploy
 - `index.html` - Página principal
+- `404.html` - Página de erro 404
 - `termos.html` - Termos de uso
 - `privacidade.html` - Política de privacidade
 - `css/styles.css` - Estilos
@@ -208,7 +239,7 @@ O site também está pronto para deploy em:
 - `assets/favicon.svg` - Favicon SVG (backup)
 - `assets/favicon.ico` - Favicon para compatibilidade
 - `assets/video/bg-octo.mp4` - Vídeo background
-- `fonts/gordita-black.ttf` - Fonte Gordita Black personalizada
+- `fonts/gordita-black.otf` - Fonte Gordita Black personalizada
 
 ### Dependências Externas
 - **GSAP 3.12.5**: Biblioteca de animações (cdn.jsdelivr.net)

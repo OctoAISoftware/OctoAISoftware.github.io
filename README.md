@@ -220,8 +220,8 @@ Edite as variáveis CSS em `css/styles.css`:
 ## 🌐 Deploy
 
 O site está hospedado em:
-- **GitHub Pages**: https://OctoAISoftware.github.io/octoai-landing/
-- **Repositório GitHub**: https://github.com/OctoAISoftware/octoai-landing
+- **GitHub Pages**: https://OctoAISoftware.github.io/OctoAISoftware.github.io/
+- **Repositório GitHub**: https://github.com/OctoAISoftware/OctoAISoftware.github.io
 
 O site também está pronto para deploy em:
 - Vercel

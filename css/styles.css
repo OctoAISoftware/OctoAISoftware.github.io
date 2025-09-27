@@ -988,6 +988,8 @@ body {
     bottom: var(--spacing-xl);
     left: 50%;
     transform: translateX(-50%);
+    transform: rotate(45deg);
+
     z-index: 2;
 }
 

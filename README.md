@@ -189,10 +189,13 @@ Edite as variáveis CSS em `css/styles.css`:
 
 ## 🌐 Deploy
 
-O site está pronto para deploy em:
+O site está hospedado em:
+- **GitHub Pages**: https://OctoAISoftware.github.io/octoai-landing/
+- **Repositório GitHub**: https://github.com/OctoAISoftware/octoai-landing
+
+O site também está pronto para deploy em:
 - Vercel
 - Netlify
-- GitHub Pages
 - Qualquer servidor web estático
 
 ### Arquivos para Deploy
